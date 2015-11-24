@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" style="max-width: 800px">
+    <div class="row">
+      <div class="column span-5-5">
+        <h2>Sensible default styles</h2>
+        <p>Hit the ground running with sensible default styles that are easily customized.</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>Paragraph text with <strong>strong</strong> or <em>emphasis</em> added. Also <a href="http://example.com">links</a>.</p>
+        <p>Unordered list:</p>
+        <ul>
+          <li>Unordered list</li>
+          <li>Unordered list
+            <ul>
+              <li>Unordered list</li>
+              <li>Unordered list</li>
+              <li>Unordered list</li>
+            </ul>
+          </li>
+          <li>Unordered list</li>
+        </ul>
+        <p>Ordered list:</p>
+        <ol>
+          <li>Ordered list</li>
+          <li>Ordered list
+            <ol>
+              <li>Ordered list</li>
+              <li>Ordered list</li>
+              <li>Ordered list</li>
+            </ol>
+          </li>
+          <li>Ordered list</li>
+        </ol>
+        <p>Blockquotes:</p>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet</p>
+          <cite>&mdash; Citation</cite>
+        </blockquote>
+        <p>Code examples:</p>
+        <pre><code>class Greeter
+  def speak
+    "Hello, world!"
+  end
+end</code></pre>
+        <p>An <code>inline code</code> works, too.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column span-5-5">
+        <h2>Sexy buttons</h2>
+        <p>Use pre-made buttons in various sizes to call your users to action.</p>
+      </div>
+      <div class="column span-1-5">
+        <div class="button button--large button--primary">Save</div>
+      </div>
+      <div class="column span-1-5">
+        <button class="button" tabindex="1">Save</button>
+      </div>
+      <div class="column span-1-5">
+        <div class="button button--small">Save changes</div>
+      </div>
+      <div class="column span-1-5">
+        <div class="button button--x-small">Save changes</div>
+      </div>
+      <div class="column span-1-5">
+        <div class="button button--disabled">Save changes</div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="column span-2-5">
+        <div class="button-group">
+          <div class="button">Left</div>
+          <div class="button">Middle</div>
+          <div class="button">Right</div>
+        </div>
+      </div>
+      <div class="column span-1-5">
+        <button class="button button--round"><span class="icon">&times;</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column span-5-5">
+        <h2>Design forms with ease</h2>
+        <p>Hit the ground running with sensible default styles that are easily customized.</p>
+        <div class="message message--error">Error message</div>
+        <div class="message message--confirm">Confirmation message</div>
+        <div class="message message--warning">Warning message</div>
+      </div>
+      <div class="column span-3-5">
+        <fieldset>
+          <legend>Input lines</legend>
+          <div class="input input--string input--line">
+            <label class="input__label">Name</label>
+            <input class="input__field" type="text" name="" value="" />
+          </div>
+          <div class="input input--string input--line input--invalid">
+            <label class="input__label">Email</label>
+            <input class="input__field" type="text" name="" value="" />
+            <div class="input__error">must be at least 6 characters long</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Stacked form</legend>
+          <div class="input input--string">
+            <label class="input__label">Hometown</label>
+            <input class="input__field" type="text" name="" value="" />
+            <div class="input__hint">is visible to your friends and family.</div>
+          </div>
+          <div class="input input--password">
+            <label class="input__label">Password</label>
+            <input class="input__field" type="password" name="" value="" />
+          </div>
+          <div class="input input--textarea">
+            <label class="input__label">Description</label>
+            <textarea class="input__field" name=""></textarea>
+          </div>
+        </fieldset>
+      </div>
+      <div class="column span-2-5">
+        <div class="input input--checkbox">
+          <input id="cb1" class="input__field" type="checkbox" name="" value="" />
+          <label for="cb1" class="input__label">I accept terms and conditions</label>
+        </div>
+        <div class="input input--checkbox input--error">
+          <input class="input__field" type="checkbox" name="" value="" />
+          <label class="input__label">I am authorised to make this transaction</label>
+          <div class="input__error">needs to be checked before you can continue</div>
+        </div>
+        <div class="input input--radio">
+          <input class="input__field" type="radio" name="radio" value="a" />
+          <label class="input__label">Man or some other form of gender that is too long to fit on a line</label>
+        </div>
+        <div class="input input--radio">
+          <input class="input__field" type="radio" name="radio" value="b" />
+          <label class="input__label">Woman</label>
+        </div>
+        <div class="input input--select">
+          <label class="input__label">Country</label>
+          <select class="input__field">
+            <option>Netherlands</option>
+            <option>Belgium</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <input type="submit" value="Save changes" class="form-actions__button button">
+          <span class="form-actions__separator">or</span>
+          <a href="#" class="form-actions__cancel">cancel</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column span-5-5">
+        <h2>Flexible, mobile-first grid</h2>
+        <p>Divide your page into columns using a flexible grid system, with optional customisation of the grid for larger screens.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div style="padding: 10px; background-color: #ddd" class="column span-3-5 push-2-5">span-3-5 push-2-5</div>
+      <div style="padding: 10px; background-color: #aaa" class="column span-2-5 pull-5-5">span-2-5 pull-5-5</div>
+    </div>
+    <br>
+    <div class="row">
+      <div style="padding: 10px; background-color: #ddd" class="column span-5-5 large-span-2-5">span-5-5 large-span-2-5</div>
+      <div style="padding: 10px; background-color: #aaa" class="column span-3-5 large-span-2-5">span-3-5 large-span-2-5</div>
+      <div style="padding: 10px; background-color: #ddd" class="column span-2-5 large-span-1-5">span-2-5 large-span-1-5</div>
+    </div>
+    <br>
+    <div class="row">
+      <div style="padding: 10px; background-color: #ddd" class="column span-1-5">span-1-5</div>
+      <div style="padding: 10px; background-color: #aaa" class="column span-1-5">span-1-5</div>
+      <div style="padding: 10px; background-color: #ddd" class="column span-1-5">span-1-5</div>
+      <div style="padding: 10px; background-color: #aaa" class="column span-1-5">span-1-5</div>
+      <div style="padding: 10px; background-color: #ddd" class="column span-1-5">span-1-5</div>
+    </div>
+    <br>
+    <div class="row row--collapse">
+      <div style="padding: 10px; background-color: #ddd" class="column span-2-5">span-2-5</div>
+      <div style="padding: 10px; background-color: #aaa" class="column span-3-5">span-3-5</div>
+    </div>
+    <br>
+    <div class="row">
+      <div style="padding: 10px; background-color: #ddd" class="column span-4-5">span-4-5</div>
+      <div style="padding: 10px; background-color: #aaa" class="column span-1-5">span-1-5</div>
+    </div>
+    <br>
+    <div class="row">
+      <div style="padding: 10px; background-color: #ddd" class="column span-2-5">span-2-5</div>
+      <div style="padding: 10px; background-color: #aaa" class="column column--right span-2-5">column--right span-2-5</div>
+    </div>
+    <br>
+    <div class="row">
+      <div style="padding: 10px; background-color: #ddd" class="column span-5-5">span-5-5</div>
+    </div>
+    <div class="row">
+      <div class="column span-5-5">
+        <h2>Vertical stacks</h2>
+        <p>Use flex-box to create versatile vertical layouts with less markup.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column span-2-5">
+        <div class="stack" style="height: 300px; background-color: #ddd;">
+          <div style="padding: 10px; background-color: #ddd;" class="stack__fixed">Header</div>
+          <div style="padding: 10px; background-color: #aaa;" class="stack__grow">Content</div>
+          <div style="padding: 10px; background-color: #ddd;" class="stack__fixed">Footer</div>
+        </div>
+      </div>
+      <div class="column push-1-5 span-2-5">
+        <div class="stack" style="height: 300px">
+          <div style="padding: 10px; background-color: #ddd;" class="stack__fixed">Header</div>
+          <div style="padding: 10px; background-color: #aaa;" class="stack__grow">Content</div>
+          <div style="padding: 10px; background-color: #ddd;" class="stack__fixed">Footer</div>
+          <div style="padding: 10px; background-color: #aaa;" class="stack__grow">Content</div>
+          <div style="padding: 10px; background-color: #ddd;" class="stack__fixed">Footer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
