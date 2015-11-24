@@ -1,0 +1,69 @@
+.horizontal-list {
+  margin: 0;
+  list-style: none;
+  @extend %clearfix;
+
+  li {
+    float: left;
+  }
+}
+
+.menu {
+  @extend %clearfix;
+  font-weight: normal;
+
+  .menu__generic-item {
+    display: block;
+    padding: lines(0.33) lines(.5);
+    color: $color-black;
+  }
+
+  .menu__header {
+    @extend .menu__generic-item;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $x-small;
+  }
+
+  .menu__item {
+    @extend .menu__generic-item;
+
+    &:hover,
+    &:focus {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .menu__item--current {
+    background-color: #f9f9f9;
+  }
+
+  hr,
+  .menu__divider {
+    height: 1px;
+    background-color: $color-grey-lightest;
+    margin: lines(.33) 0;
+    border: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-black;
+  }
+}
+
+.menu--left {
+  float: left;
+}
+
+.menu--right {
+  float: right;
+}
+
+.menu--horizontal {
+  display: -webkit-flex;
+
+  .menu__item {
+    display: inline-block;
+  }
+}

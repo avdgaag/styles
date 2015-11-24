@@ -1,0 +1,123 @@
+$button-background-color: $color-grey-lightest !default;
+$button-border-radius: 3px !default;
+
+.button {
+  line-height: 1;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: $button-border-radius;
+  padding: lines(0.5) lines(1);
+  cursor: pointer;
+  margin: 0 lines(0.5) 0 0;
+  font-family: $font-heading;
+  font-size: $font-size;
+  display: inline-block;
+  vertical-align: baseline;
+  text-align: center;
+  font-weight: bold;
+  user-select: none;
+  font-style: normal;
+  border: none;
+  outline: none;
+  min-height: lines(1);
+  text-decoration: none;
+  background-color: $button-background-color;
+  color: contrasting-color($button-background-color, $amount: 50%);
+  white-space: nowrap;
+  transition: all .1s ease;
+  box-shadow: rgba(0,0,0,0) 0 0 3px 0 inset;
+
+  &:hover {
+    background-color: lighten($button-background-color, 4%);
+  }
+
+  &:focus {
+    box-shadow: rgba(0,0,0,0) 0 0 3px 0 inset, transparentize($color-primary, 0.4) 0 0 3px 2px;
+  }
+
+  &:active {
+    background-color: darken($button-background-color, 5%);
+    box-shadow: rgba(0,0,0,.2) 0 0 5px 0 inset;
+  }
+}
+
+.button--primary {
+  background-color: $color-primary;
+  color: contrasting-color($color-primary, $amount: 50%);
+
+  &:hover {
+    background-color: saturate(lighten($color-primary, 10%), 10%);
+  }
+
+  &:focus {
+    box-shadow: rgba(0,0,0,0) 0 0 3px 0 inset, transparentize($color-primary, 0.4) 0 0 3px 2px;
+  }
+
+  &:active {
+    background-color: darken($color-primary, 5%);
+    box-shadow: rgba(0,0,0,.2) 0 0 5px 0 inset;
+  }
+}
+
+.button--x-small {
+  font-size: $x-small;
+  padding: lines(0.2) lines(0.5);
+}
+
+.button--small {
+  font-size: $small;
+  padding: lines(0.33) lines(0.75);
+}
+
+.button--large {
+  font-size: $large;
+  padding: lines(.75) lines(1.5);
+}
+
+.button--disabled {
+  background-color: lighten($button-background-color, 3%);
+  color: contrasting-color(lighten($button-background-color, 3%), $amount: 10%);
+  cursor: not-allowed;
+}
+
+.button-group {
+  display: -webkit-flex;
+
+  .button {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .button:first-child {
+    border-top-left-radius: $button-border-radius;
+    border-bottom-left-radius: $button-border-radius;
+  }
+
+  .button:last-child {
+    border-top-right-radius: $button-border-radius;
+    border-bottom-right-radius: $button-border-radius;
+  }
+}
+
+.button--round {
+  border-radius: 50%;
+  padding: lines(0.5);
+}
+
+.button--round.button--small {
+  padding: lines(0.33);
+}
+
+.button--round.button--x-small {
+  padding: lines(0.2);
+}
+
+.button--round.button--large {
+  padding: lines(0.75);
+}
+
+.button .fa,
+.button .icon {
+  display: inline-block;
+  width: 1em;
+}

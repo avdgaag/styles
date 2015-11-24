@@ -1,0 +1,25 @@
+.dropdown {
+  position: relative;
+}
+
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 100%;
+  white-space: nowrap;
+  left: 0;
+  z-index: 2;
+  box-shadow: rgba(0,0,0,.15) 0 0 3px;
+  background-color: #fff;
+  text-align: left;
+  border: $border;
+  border-radius: 3px;
+  cursor: default;
+  margin-top: lines(.25);
+}
+
+.dropdown:hover .dropdown__menu {
+  display: block;
+}

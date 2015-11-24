@@ -1,0 +1,9 @@
+.stack {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: space-between;
+}
+
+.stack__grow {
+  -webkit-flex: 1;
+}

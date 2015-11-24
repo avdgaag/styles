@@ -1,0 +1,25 @@
+.message {
+  @include surrounding-lines;
+  @include remove-inner-margins;
+  padding: lines(0.5);
+  border: 1px solid;
+  font-family: $font-heading;
+}
+
+.message--error {
+  background-color: change-color($color-error, $lightness: 92.55, $saturation: 90%);
+  border-color: $color-error;
+  color: $color-error;
+}
+
+.message--confirm {
+  background-color: change-color($color-confirm, $lightness: 92.55, $saturation: 90%);
+  border-color: $color-confirm;
+  color: $color-confirm;
+}
+
+.message--warning {
+  background-color: change-color($color-warning, $lightness: 92.55, $saturation: 90%);
+  border-color: $color-warning;
+  color: $color-warning;
+}

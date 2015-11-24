@@ -1,0 +1,49 @@
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@mixin surrounding-lines($n: 1) {
+  margin-top: lines($n);
+  margin-bottom: lines($n);
+}
+
+@mixin indent($n: 1) {
+  margin: {
+    left: lines($n);
+    right: lines($n);
+  }
+}
+
+@mixin outset($amount: $grid-gutter / 2) {
+  padding: {
+    left: $amount;
+    right: $amount;
+  };
+  margin: {
+    left: -$amount;
+    right: -$amount;
+  };
+}
+
+@mixin outdent($selector, $amount, $gutter: $grid-gutter) {
+  @extend %clearfix;
+  padding-left: $amount + $gutter;
+
+  & #{$selector} {
+    margin-left: ($amount + $gutter) * -1;
+    float: left;
+    width: $amount;
+  }
+}
+
+@mixin remove-inner-margins {
+  :first-child {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}

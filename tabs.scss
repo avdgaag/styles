@@ -1,0 +1,26 @@
+.tabs {
+  @extend %clearfix;
+  @include surrounding-lines;
+  border-bottom: $border;
+}
+
+.tabs__tab {
+  float: left;
+  border: $border;
+  border-bottom: $border;
+  margin-right: lines(.5);
+  padding: lines(.25) lines(.5);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+  background-color: $color-grey-lightest;
+  color: $color-grey-dark;
+  top: 1px;
+  position: relative;
+}
+
+.tabs__tab--current {
+  background-color: #fff;
+  color: $color-black;
+  border-bottom-color: #fff;
+}

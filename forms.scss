@@ -1,0 +1,51 @@
+.input {
+  @include surrounding-lines;
+  @include remove-inner-margins;
+}
+
+fieldset {
+  *:nth-child(2) {
+    margin-top: 0;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.input--invalid {
+  .input__label {
+    color: $color-error;
+  }
+
+  .input__field {
+    border-color: $color-error;
+  }
+}
+
+.input__error {
+  color: $color-error;
+}
+
+.input__hint {
+  @extend small;
+}
+
+.input--radio,
+.input--checkbox {
+  @extend %clearfix;
+  padding-left: 20px;
+
+  .input__field {
+    margin-left: -20px;
+  }
+}
+
+.input--line {
+  @include outdent('.input__label', 100px);
+
+  .input__label {
+    line-height: lines(1.5);
+  }
+}

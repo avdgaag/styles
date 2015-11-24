@@ -1,0 +1,54 @@
+// Colors
+$color-black:         #333333 !default;
+$color-black-light:   #666666 !default;
+$color-grey-light:    #cccccc !default;
+$color-grey-lightest: #e0e0e0 !default;
+$color-grey-dark:     #aaaaaa !default;
+$color-blue:          #3b83c0 !default;
+$color-red-dark:      #a94442 !default;
+$color-green-dark:    #3c763d !default;
+$color-yellow-dark:   #825c01 !default;
+
+$color-primary:      $color-blue !default;
+$color-error:        $color-red-dark !default;
+$color-confirm:      $color-green-dark !default;
+$color-warning:      $color-yellow-dark !default;
+$color-highlight:    $color-blue !default;
+$color-disabled:     $color-grey-dark !default;
+$color-text:         $color-black !default;
+$color-link:         $color-primary !default;
+$color-link-visited: desaturate(darken($color-link, 10%), 20%) !default;
+$color-link-hover:   saturate(lighten($color-link, 20%), 20%) !default;
+$color-link-active:  saturate(lighten($color-link, 30%), 30%) !default;
+
+// Typography
+$font-size:    16px !default;
+$line:         24px !default;
+$font-color:   $color-text !default;
+$serif:        Georgia, serif !default;
+$sans-serif:   sans-serif !default;
+$font-body:    $sans-serif !default;
+$font-heading: $sans-serif !default;
+$monospace:    Menlo, monospace !default;
+
+// Standard font sizes
+$xx-small:  11px !default;
+$x-small:   12px !default;
+$small:     14px !default;
+$medium:    16px !default;
+$large:     18px !default;
+$x-large:   24px !default;
+$xx-large:  36px !default;
+$xxx-large: 48px !default;
+
+// Grid
+$grid-width: 960px !default;
+$grid-gutter: 20px !default;
+$grid-columns: 5 !default;
+
+// Other
+$border-width:  1px !default;
+$border-radius: 3px !default;
+$border:        $border-width solid $color-grey-light !default;
+$box-shadow:    0 0 10px rgba(0, 0, 0, .5) !default;
+$body-bg:       white !default;

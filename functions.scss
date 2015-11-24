@@ -1,0 +1,15 @@
+@function grid-gutter($n: 1) {
+  @return $grid-gutter * $n;
+}
+
+@function lines($n: 1) {
+  @return $line * $n;
+}
+
+@function contrasting-color($background-color, $amount: 65%) {
+  @if(lightness($background-color) < 50%) {
+    @return saturate(lighten($background-color, $amount), 40%);
+  } @else {
+    @return desaturate(darken($background-color, $amount), 40%);
+  }
+}

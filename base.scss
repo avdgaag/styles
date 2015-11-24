@@ -1,0 +1,203 @@
+body {
+  font-size: $font-size;
+  font-family: $font-body;
+  line-height: $line;
+  color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, ul, ol, table,
+pre, fieldset {
+  @include surrounding-lines(1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+}
+
+h1 {
+  font-size: $xx-large;
+  line-height: lines(2);
+}
+
+h2 {
+  font-size: $x-large;
+  line-height: lines(2);
+}
+
+h3 {
+  font-size: $large;
+}
+
+ol, ul {
+  padding: 0;
+  @include indent(1);
+}
+
+li ul,
+li ol {
+  @include surrounding-lines(0);
+}
+
+pre, code, kbd {
+  font-family: monospace;
+  font-size: $small;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: lines(1);
+}
+
+blockquote {
+  @include indent(1);
+  font-style: italic;
+}
+
+a {
+  color: $color-link;
+
+  &:visited {
+    color: $color-link-visited;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
+}
+
+abbr {
+  text-transform: uppercase;
+  font-size: 0.80em;
+  letter-spacing: 0.1em;
+  border: none;
+}
+
+small {
+  font-size: $x-small;
+  color: $color-disabled;
+}
+
+table, td, th {
+  border: $border;
+}
+
+table {
+  margin: -1px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: left;
+}
+
+caption {
+  @extend small;
+  line-height: lines(1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+  box-sizing: border-box;
+  border: $border;
+  border-radius: $border-radius;
+  padding: lines(.25);
+  line-height: lines(1);
+  height: lines(1.5);
+  margin: 0;
+  width: 100%;
+  color: $color-black-light;
+  font-size: $font-size;
+  -webkit-appearance: none;
+}
+
+textarea {
+  border: $border;
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  padding: lines(.25);
+  margin: 0;
+  width: 100%;
+  color: $color-black-light;
+  font-size: $font-size;
+}
+
+meter,
+progress {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: $color-black;
+  outline: 0;
+  border-color: $color-grey-dark;
+}
+
+
+select {
+  margin: lines(0.5) 0;
+  font-size: $font-size;
+  display: block;
+  max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+}
+
+label {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  padding: lines(1) 0 0 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  border-bottom: $border;
+}
+
+img {
+  vertical-align: text-bottom;
+}
